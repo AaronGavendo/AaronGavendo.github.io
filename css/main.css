@@ -1,0 +1,63 @@
+body {
+/* CSS Thanks to http://www.colorzilla.com/ */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+}
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.0;
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s:
+    -o-transition:      opacity 1s;
+    transition;         opacity 1s;
+}
+.impress-enabled .step.active { opacity: 1 }
+.slide {
+    display: block;
+    width: 700px;
+    height: 40px 60px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: rgb(52, 52, 52);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+/* styling for slide paragraphs */
+.slide p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 45px;
+}
+/* styling for slide links */
+.slide a, .slide a:visited {
+    color: #848BA5
+    text-decoration: none;
+    background-color: #A4848B;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #848BA5;
+}
+
+.slide a:hover, .slide a:active {
+    background-color: #cde;
+}
+/* styling for slide text area */
+.slide .slide-text {
+    height: 650px;
+}
+/* styling for menu section of each slide */
+div.menu {
+    border-top: 2px slid black;
+    padding-top: 25px;
+    text-align: center;
+}
+    

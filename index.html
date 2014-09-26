@@ -1,0 +1,164 @@
+<!-- index.html --->
+<!-- Aaron Gavendo (300603352) -->
+<!-- Last Modified By: Aaron Gavendo -->
+<!--
+Add option to turn back in some sections
+Add option to move unilaterally in one instance
+-->
+<!-- Modified on: 2014-09-21 -->
+<!-- Version: 0.6 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aaron's Dragon Game</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div id="impress">
+    <!--1st Decision Level -->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p>You arrive at a castle to save Princess Blair</p>
+                <p>But a Dragon is guarding her. </p>
+                <p>You must make the proper life or death decisions</p>
+                <p>You will reach 1/8 outcomes</p>
+                <p>One will result in you being a hero</p>
+                <p>The other Seven will result in DOOM!</p>
+                <p><a href="#2">Enter</a> the main door</p>
+                <p><a href="#3">Sneak</a> around the back</p>
+            </div>
+        </div>
+            <!--2nd Decision Level -->
+        <div id="2" class="step slide" data-x="1000">
+            <div class="slide-text">
+                <p>You enter the Grand Hall</p>
+                <p>A large dragon is there.</p>
+                <p>You can fight it or hide in the kitchen.</p>
+                <div class="menu"><a href="#4">FIGHT</a></div>
+                <div class="menu"><a href="#5">HIDE</a> in the kitchen</div>
+                <div class="menu"><a href="#1">BACK</a> to the start</div>
+            </div>
+        </div>
+        <div id="3" class="step slide" data-x="3000">
+            <div class="slide-text">
+                <p>You go back around the castle and enter a courtyard with a river running along side</p>
+                <p>You see a window that was left open</p>
+                <p>You see a sewer dumping from the castle into the river</p>
+                <div class="menu"><a href="#6">WINDOW</a></div>
+                <div class="menu"><a href="#7">SEWER</a></div>
+                <div class="menu"><a href="#1">BACK</a> to the start</div>
+            </div>
+        </div>
+            <!--3rd Decision Level-->
+        <div id="4" class="step slide" data-x="4000">
+            <div class="slide-text">
+                <p>You kill the dragon</p>
+                <p>You go to Princess Blair's Room</p>
+                <p>She is lying on her bed sleeping</p>
+                <div class="menu"><a href="#8">WAKE HER</a></div>
+                <div class="menu"><a href="#9">KISS HER</a></div>
+            </div>
+        </div>
+        <div id="5" class="step slide" data-x="5000">
+            <div class="slide-text">
+                <p>You run into the kitchen</p>
+                <p>You need to think make a distraction</p>
+                <div class="menu"><a href="#10">MAKE</a> a bomb from propane</div>
+                <div class="menu"><a href="#11">COOK</a> a yummy steak</div>
+                <div class="menu"><a href="#4">GO BACK</a> go back and kill the dragon!</div>
+            </div>
+        </div>
+        <div id="6" class="step slide" data-x="6000">
+            <div class="slide-text">
+                <p>You Enter a room</p>
+                <p>There is a door to the grand hall near you</p>
+                <p>Across the room is a Golden Shield that looks very promising</p>
+                <div class="menu"><a href="#12">CROSS</a> the room for the shield</div>
+                <div class="menu"><a href="#13">EXIT</a> the room</div>
+                <div class="menu"><a href="#3">BACK</a> out the window</div>
+            </div>
+        </div>
+        <div id="7" class="step slide" data-x="7000">
+            <div class="slide-text">
+                <p>You start to crawl through the sewer</p>
+                <p>You see a ladder upwards</p>
+                <div class="menu"><a href="#14">CLIMB</a> the ladder</div>
+                <div class="menu"><a href="#15">CONTINUE</a> through the sewer</div>
+                <div class="menu"><a href="#3">LEAVE</a> the sewer</div>
+            </div>
+
+        </div>
+            <!-- Outcome nodes -->
+        <div id="8" class="step slide" data-x="8000">
+            <div class="slide-text">
+                <p>You shake Princess Blair</p>
+                <p>She wakes up and thanks you for your help</p>
+                <p>You get married and live happy ever after</p>
+                <p>WIN</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>
+        <div id="9" class="step slide" data-x="9000">
+            <div class="slide-text">
+                <p>You are sued for sexual harassment </p>
+                <p>LOSE</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>
+        <div id="10" class="step slide" data-x="10000">
+            <div class="slide-text">
+                <p>You try to make a bomb from propane tanks</p>
+                <p>You blow yourself up</p>
+                <p>LOSE</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>
+        <div id="11" class="step slide" data-x="11000">
+            <div class="slide-text">
+                <p>You cook a steak</p>
+                <p>It looks so good you eat it yourself</p>
+                <p>It was undercooked and you die of E. coli </p>
+                <p>LOSE</p>
+            <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>
+        <div id="12" class="step slide" data-x="12000">
+            <div class="slide-text">
+                <p>You start walking over to the shield</p>
+                <p>But you fall through a trap door and are suck in the jail forever</p>
+                <p>LOSE</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>
+        <div id="13" class="step slide" data-x="13000">
+            <div class="slide-text">
+                <p>You open the door to exit the room</p>
+                <p>You step into a room full of hungry dogs, you are food</p>
+                <p>LOSE</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>
+        <div id="14" class="step slide" data-x="14000">
+            <div class="slide-text">
+                <p>You start to climb the ladder towards a upward manhole</p>
+                <p>A step on the ladder breaks and you are impaled on your own sword</p>
+                <p>LOSE</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>        
+            </div>
+        </div>
+        <div id="15" class="step slide" data-x="15000">
+            <div class="slide-text">
+                <p>You keep following the sewer path</p>
+                <p>You get tangled in a spiders web</p>
+                <p>LOSE</p>
+                <div class="menu"><a href="#1">START OVER?</a></div>
+            </div>
+        </div>      
+    </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
