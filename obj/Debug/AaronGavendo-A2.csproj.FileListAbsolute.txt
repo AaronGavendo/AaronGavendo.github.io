@@ -1,0 +1,6 @@
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week7\AaronGavendo_Assignment2\AaronGavendo-A2\AaronGavendo-A2\bin\AaronGavendo-A2.dll.config
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week7\AaronGavendo_Assignment2\AaronGavendo-A2\AaronGavendo-A2\bin\AaronGavendo-A2.dll
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week7\AaronGavendo_Assignment2\AaronGavendo-A2\AaronGavendo-A2\bin\AaronGavendo-A2.pdb
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week7\AaronGavendo_Assignment2\AaronGavendo-A2\AaronGavendo-A2\obj\Debug\AaronGavendo-A2.csprojResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week7\AaronGavendo_Assignment2\AaronGavendo-A2\AaronGavendo-A2\obj\Debug\AaronGavendo-A2.dll
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week7\AaronGavendo_Assignment2\AaronGavendo-A2\AaronGavendo-A2\obj\Debug\AaronGavendo-A2.pdb
