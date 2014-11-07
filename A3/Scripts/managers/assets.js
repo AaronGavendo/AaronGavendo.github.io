@@ -5,7 +5,7 @@
         }
         Assets.preload = function () {
             var manifest = [
-                { id: "grass", src: "images/Grass.png" },
+                { id: "grass", src: "images/ground.jpg" },
                 { id: "tank", src: "images/Tank.png" },
                 { id: "tnt", src: "images/TNT.png" },
                 { id: "nazi1", src: "images/Nazi1.png" },
