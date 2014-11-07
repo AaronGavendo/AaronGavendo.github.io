@@ -1,0 +1,37 @@
+﻿<!-- index.html
+Aaron Gavendo (300603352)
+Last Modified By: Aaron Gavendo
+-------Additions-------------------------------------------
+Put Preload to its own class
+-----------------------------------------------------------
+Modified on: 2014-11-04
+Version: 0.10
+---------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CreateJS BoilerPlate</title>
+    <!-- CSS Section -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body onload="managers.Assets.preload()">
+    <canvas id="canvas" width="800" height="480"></canvas>
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/easeljs-0.7.1.min.js"></script>
+    <script src="Scripts/tweenjs-0.5.1.min.js"></script>
+    <script src="Scripts/soundjs-0.5.2.min.js"></script>
+    <script src="Scripts/preloadjs-0.4.1.min.js"></script>
+    <script src="Scripts/managers/assets.js"></script>
+    <script src="Scripts/objects/scoreboard.js"></script>
+    <script src="Scripts/objects/grass.js"></script>
+    <script src="Scripts/objects/tanks.js"></script>
+    <script src="Scripts/objects/tnt.js"></script>
+    <script src="Scripts/objects/nazi.js"></script>
+    <script src="Scripts/game.js"></script>
+</body>
+</html>
