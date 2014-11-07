@@ -9,6 +9,8 @@
                 { id: "tank", src: "images/Tank.png" },
                 { id: "tnt", src: "images/TNT.png" },
                 { id: "nazi1", src: "images/Nazi1.png" },
+                { id: "nazi2", src: "images/Nazi2.png" },
+                { id: "nazi3", src: "images/Nazi3.png" },
                 { id: "boom", src: "sounds/boom.wav" },
                 { id: "engine", src: "sounds/engine.wav" },
                 { id: "death", src: "sounds/death.mp3" }
