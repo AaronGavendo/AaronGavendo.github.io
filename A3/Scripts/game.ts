@@ -74,21 +74,34 @@ function tankAndNazi() {
     for (var a = 0; a < NAZI_NUM; a++) {
         var p1: createjs.Point;
         var p2: createjs.Point;
+        var p3: createjs.Point;
 
         p1 = new createjs.Point();
         p2 = new createjs.Point();
+        p3 = new createjs.Point();
 
         p1.x = tank.image.x;
         p1.y = tank.image.y;
         p2.x = nazis[a].image.x;
         p2.y = nazis[a].image.y;
+        p3.x = 800;
+
 
         if (distance(p1, p2) < ((tank.image.getBounds().height * 0.5) + (nazis[a].image.getBounds().height * 0.5))) {
+            console.log("Tank:Nazi Collision Run");
             createjs.Sound.play("death");
             scoreboard.score += 1;
             nazis[a].reset();
             stage.update();
 
+        }
+        else if (p2.x > 799)
+        {
+            console.log("Nazi Missed Collision Run");
+            nazis[a].reset();
+            scoreboard.missed += 1;
+
+            stage.update();
         }
     }
 
