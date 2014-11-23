@@ -1,0 +1,6 @@
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week12\AaronGavendo_Final\CreateJS-BoilerPlate-master\CreateJS BoilerPlate\bin\CreateJS BoilerPlate.dll.config
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week12\AaronGavendo_Final\CreateJS-BoilerPlate-master\CreateJS BoilerPlate\bin\CreateJS BoilerPlate.dll
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week12\AaronGavendo_Final\CreateJS-BoilerPlate-master\CreateJS BoilerPlate\bin\CreateJS BoilerPlate.pdb
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week12\AaronGavendo_Final\CreateJS-BoilerPlate-master\CreateJS BoilerPlate\obj\Debug\CreateJS BoilerPlate.csprojResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week12\AaronGavendo_Final\CreateJS-BoilerPlate-master\CreateJS BoilerPlate\obj\Debug\CreateJS BoilerPlate.dll
+C:\Users\Aaron\Documents\Files\!COMP 397 - Web Game Programming\week12\AaronGavendo_Final\CreateJS-BoilerPlate-master\CreateJS BoilerPlate\obj\Debug\CreateJS BoilerPlate.pdb
