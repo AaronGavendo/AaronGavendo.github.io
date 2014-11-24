@@ -3,14 +3,28 @@ var objects;
 (function (objects) {
     var Nazi = (function () {
         function Nazi() {
-            this.rand = Math.floor((Math.random() * 3) + 1);
-            if (this.rand == 1) {
-                this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi1"));
-            } else if (this.rand == 2) {
-                this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi2"));
-            } else {
+            console.log("Start");
+            if (this.level == 1) {
+                console.log("1");
+                this.rand = Math.floor((Math.random() * 3) + 1);
+                if (this.rand == 1) {
+                    this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi1"));
+                }
+                if (this.rand == 2) {
+                    this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi2"));
+                } else if (this.rand == 3) {
+                    this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi3"));
+                }
+            } else if (this.level == 2) {
+                console.log("2");
+                this.image = new createjs.Bitmap(managers.Assets.loader.getResult("panzer"));
+            } else if (this.level == 3) {
+                console.log("3");
                 this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi3"));
+            } else {
+                console.log("LEVEL NAZI PICKER GOING TO ELSE");
             }
+            console.log("End");
             this.image.regX = this.image.getBounds().width * 0.5;
             this.image.regY = this.image.getBounds().height * 0.5;
             this.reset();

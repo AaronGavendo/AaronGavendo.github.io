@@ -25,14 +25,14 @@ module objects {
                 this.label.text = this.labelString;
             }
             else
-            {
-                if (this.score >= 15) {
+            { /*
+                if (this.score >= 25) {
                     this.level = 2;
                 }
-                else if (this.score >= 30) {
+                else if (this.score >= 50) {
                     this.level = 3
-                    }
-                this.labelString = "Lives: " + this.lives.toString() + " Kills: " + this.score.toString() + " Missed: " + this.missed.toString() + "Level: " + this.level.toString();
+                    }*/
+                this.labelString = "Lives: " + this.lives.toString() + " Kills: " + this.score.toString() + " Missed: " + this.missed.toString() + " Level: " + this.level.toString();
                 this.label.text = this.labelString;
             }
 

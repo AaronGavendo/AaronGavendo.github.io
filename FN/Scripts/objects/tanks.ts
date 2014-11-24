@@ -13,7 +13,7 @@ module objects
             this.image.y = 200;
             this.image.x = 700;
             stage.addChild(this.image);
-            createjs.Sound.play("engine", 0, 0, 0, -1, 1, 1);
+            //createjs.Sound.play("engine", 0, 0, 0, -1, 1, 1);
         }
 
         update()

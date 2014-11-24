@@ -21,12 +21,7 @@ var objects;
                 this.labelString = "You missed 12! Your village was destroyed";
                 this.label.text = this.labelString;
             } else {
-                if (this.score >= 15) {
-                    this.level = 2;
-                } else if (this.score >= 30) {
-                    this.level = 3;
-                }
-                this.labelString = "Lives: " + this.lives.toString() + " Kills: " + this.score.toString() + " Missed: " + this.missed.toString() + "Level: " + this.level.toString();
+                this.labelString = "Lives: " + this.lives.toString() + " Kills: " + this.score.toString() + " Missed: " + this.missed.toString() + " Level: " + this.level.toString();
                 this.label.text = this.labelString;
             }
         };

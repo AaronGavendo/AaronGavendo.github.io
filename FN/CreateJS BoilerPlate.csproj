@@ -61,6 +61,7 @@
   <ItemGroup>
     <Content Include="images\Grass.png" />
     <Content Include="images\ground.jpg" />
+    <Content Include="images\king_tiger.png" />
     <Content Include="images\Nazi1.png" />
     <Content Include="images\Nazi2.png" />
     <Content Include="images\Nazi3.png" />

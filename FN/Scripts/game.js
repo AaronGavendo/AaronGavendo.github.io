@@ -15,6 +15,7 @@ var scoreboard;
 var LIVES_NUM = 3;
 var NAZI_NUM = 4;
 var TNT_NUM = 2;
+var CURRENT_LEVEL = 1;
 
 var GAME_FONT = "34px Consolas";
 var FONT_COLOUR = "#FF0000";
@@ -82,12 +83,21 @@ function tankAndNazi() {
 
         if (distance(p1, p2) < ((tank.image.getBounds().height * 0.5) + (nazis[a].image.getBounds().height * 0.5))) {
             console.log("Tank:Nazi Collision Run");
-            createjs.Sound.play("death");
+
+            //createjs.Sound.play("death"); //PUT THIS BACK IN!
             scoreboard.score += 1;
+            if (scoreboard.score >= 5) {
+                console.log("ENTER IF TO MAKE LEVEL 2");
+                scoreboard.level = 2;
+            }
+            if (scoreboard.score >= 10) {
+                console.log("ENTER IF TO MAKE LEVEL 3");
+                scoreboard.level = 3;
+            }
             nazis[a].reset();
             stage.update();
         } else if (p2.x > 799) {
-            console.log("Nazi Missed Collision Run");
+            //console.log("Nazi Missed Collision Run");
             nazis[a].reset();
             scoreboard.missed += 1;
 
