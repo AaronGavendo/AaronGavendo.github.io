@@ -1,4 +1,6 @@
-﻿/// <reference path="../managers/assets.ts" />
+﻿/// <reference path="scoreboard.ts" />
+/// <reference path="../managers/assets.ts" />
+
 module objects
 {
     export class Nazi
@@ -7,29 +9,35 @@ module objects
         dy: number;
         rand: number;
         scoreboard: objects.Scoreboard;
-        level: number;
 
+        level: number = 2;
+        test: number = 1;
 
         constructor() {
-            console.log("Start");
-            if (this.level == 1) {
+            if (this.level == 1)
+            {
                 console.log("1");
                 this.rand = Math.floor((Math.random() * 3) + 1);
-                if (this.rand == 1) {
+                if (this.rand == 1)
+                {
                     this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi1"));
                 }
-                if (this.rand == 2) {
+                if (this.rand == 2)
+                {
                     this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi2"));
                 }
-                else if (this.rand == 3) {
+                else if (this.rand == 3)
+                {
                     this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi3"));
                 }
             }
-            else if (this.level == 2) {
+            else if (this.level == 2)
+            {
                 console.log("2");
                 this.image = new createjs.Bitmap(managers.Assets.loader.getResult("panzer"));
             }
-            else if (this.level == 3) {
+            else if (this.level == 3)
+            {
                 console.log("3");
                 this.image = new createjs.Bitmap(managers.Assets.loader.getResult("nazi3"));
             }

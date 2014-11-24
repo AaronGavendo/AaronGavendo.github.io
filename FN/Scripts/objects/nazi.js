@@ -1,9 +1,11 @@
-﻿/// <reference path="../managers/assets.ts" />
+﻿/// <reference path="scoreboard.ts" />
+/// <reference path="../managers/assets.ts" />
 var objects;
 (function (objects) {
     var Nazi = (function () {
         function Nazi() {
-            console.log("Start");
+            this.level = 2;
+            this.test = 1;
             if (this.level == 1) {
                 console.log("1");
                 this.rand = Math.floor((Math.random() * 3) + 1);
