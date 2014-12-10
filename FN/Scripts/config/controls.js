@@ -1,1 +1,5 @@
-﻿//# sourceMappingURL=controls.js.map
+﻿var controls;
+(function (controls) {
+    controls.SHELL = false;
+})(controls || (controls = {}));
+//# sourceMappingURL=controls.js.map

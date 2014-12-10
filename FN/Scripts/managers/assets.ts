@@ -14,8 +14,11 @@
                 { id: "nazi2", src: "images/Nazi2.png" },
                 { id: "nazi3", src: "images/Nazi3.png" },
                 { id: "panzer", src: "images/king_tiger.png" },
+                { id: "car", src: "images/car.png" },
+                { id: "shell", src: "images/shell.png" },
                 { id: "boom", src: "sounds/boom.wav" },
                 { id: "engine", src: "sounds/engine.wav" },
+                { id: "soundtrack", src: "sounds/soundtrack.mp3" },
                 { id: "death", src: "sounds/death.mp3" }
             ]
 

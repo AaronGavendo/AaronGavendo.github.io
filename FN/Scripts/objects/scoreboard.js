@@ -10,14 +10,13 @@ var objects;
             this.labelString = "";
             this.label = new createjs.Text(this.labelString, GAME_FONT, FONT_COLOUR);
             this.update();
-            stage.addChild(this.label);
         }
         Scoreboard.prototype.update = function () {
             if (this.lives <= 0) {
                 //var finalScore = this.score.toString();
                 this.labelString = "YOU ARE DEAD, STOP PLAYING";
                 this.label.text = this.labelString;
-            } else if (this.missed > 12) {
+            } else if (this.missed > 11) {
                 this.labelString = "You missed 12! Your village was destroyed";
                 this.label.text = this.labelString;
             } else {
