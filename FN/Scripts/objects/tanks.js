@@ -15,36 +15,6 @@ var objects;
             this.image.y = stage.mouseY;
             this.tankY = this.image.y;
         };
-
-        // Bind key actions to player events
-        Tank.prototype._assignControls = function () {
-            console.log("Assign Controls");
-            window.onkeydown = this._onControlDown;
-            window.onkeyup = this._onControlUp;
-        };
-
-        // Switch statement to activate movement and rotation
-        Tank.prototype._onControlDown = function (event) {
-            switch (event.keyCode) {
-                case keys.SPACE:
-                    controls.SHELL = true;
-                    break;
-            }
-        };
-
-        Tank.prototype._onControlUp = function (event) {
-            switch (event.keyCode) {
-                case keys.SPACE:
-                    controls.SHELL = false;
-                    break;
-            }
-        };
-
-        // Respond to player key presses
-        Tank.prototype._controlAction = function () {
-            //if (controls.SPACE) {
-            //}
-        };
         return Tank;
     })();
     objects.Tank = Tank;

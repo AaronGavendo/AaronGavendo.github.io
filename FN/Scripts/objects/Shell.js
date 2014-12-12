@@ -23,9 +23,6 @@ var objects;
             }
         };
 
-        Shell.prototype.updatePosition = function (Position) {
-        };
-
         Shell.prototype.destroy = function () {
             stage.removeChild(this.image);
         };

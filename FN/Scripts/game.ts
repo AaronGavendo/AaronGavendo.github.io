@@ -6,7 +6,6 @@
 /// <reference path="objects/tnt.ts" />
 /// <reference path="objects/nazi.ts" />
 
-
 var stage: createjs.Stage;
 
 var grass: objects.Grass
@@ -36,8 +35,6 @@ function init(): void {
 }
 
 function gameLoop(event): void {
-    console.log(nazis);
-    //scoreboard.update();
     if (SHOULD_CREATE) {
         if (scoreboard.level === 1) {
             console.log("hello", scoreboard.level);
@@ -81,16 +78,19 @@ function gameLoop(event): void {
             SHOULD_CREATE = false;
         }
     }
-    
+
     grass.update();
     tank.update();
     TANK_POS = tank.tankY;
+
     for (var t = 0; t < TNT_NUM; t++) {
         tnt[t].update();
     }
+
     for (var s = 0; s < SHL_NUM; s++) {
         shell[s].update();
     }
+
     for (var n = 0; n < NAZI_NUM; n++) {
         nazis[n].level = scoreboard.level;
         nazis[n].update();
@@ -101,6 +101,7 @@ function gameLoop(event): void {
 
     stage.update();
 }
+
 function tankAndTNT(){
     for (var a = 0; a < TNT_NUM; a++) {
         var p1: createjs.Point;
@@ -117,6 +118,7 @@ function tankAndTNT(){
         if (distance(p1, p2) < ((tank.image.getBounds().height * 0.5) + (tnt[a].image.getBounds().height * 0.5))) {
             createjs.Sound.play("boom");
             scoreboard.lives -= 1;
+            LIVES_NUM -= 1;
             tnt[a].reset();
             stage.update();
         }
@@ -234,11 +236,12 @@ function shellAndTNT() {
 }
 
 function naziDies() {
+    //This fumction saves me running this twice in each of the Nazi collisions.
     var oldValue = scoreboard.level;
-    createjs.Sound.play("death"); //PUT THIS BACK IN!
+    createjs.Sound.play("death");
     scoreboard.score += 1;
-    if (scoreboard.score >= 15) {
-        scoreboard.level = 2;
+    if (scoreboard.score >= 15) {   //15 kills per a level was chosen to allow testers and teacher to play the -
+        scoreboard.level = 2;       // - levels much faster
     }
     if (scoreboard.score >= 30) {
         scoreboard.level = 3;
@@ -281,23 +284,12 @@ function distance(p1: createjs.Point, p2: createjs.Point): number {
     return result;
 }
 
-function main(): void
-{
+function main(): void{
     scoreboard = new objects.Scoreboard();
-
     grass = new objects.Grass();
-    //for (var i = 0; i < NAZI_NUM; i++) {
-        //nazis[i] = new objects.Nazi();
-    //}
-    //for (var o = 0; o < TNT_NUM; o++) {
-       // tnt[o] = new objects.TNT();
-   // }
     for (var s2 = 0; s2 < SHL_NUM; s2++) {
         shell[s2] = new objects.Shell();
     }
     tank = new objects.Tank();
-
     stage.addChild(scoreboard.label);
-   
-
 }

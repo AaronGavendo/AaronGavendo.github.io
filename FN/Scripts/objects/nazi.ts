@@ -6,7 +6,6 @@ module objects {
         image: createjs.Bitmap;
         dy: number;
         rand: number;
-
         level: number = 1;
 
         constructor() {
@@ -79,14 +78,12 @@ module objects {
 
         reset() {
             this.dy = Math.floor(Math.random() * 5 + 5);
-
             this.image.x = 0;
             this.image.y = Math.floor(Math.random() * stage.canvas.height);
         }
 
         update() {
             this.image.x += this.dy;
-            //console.log(this.image.x, (stage.canvas.width / 2 + this.image.getBounds().width));
             if (this.image.x >= (stage.canvas.width)) {
                 this.reset();
                 this.pickEnemy();

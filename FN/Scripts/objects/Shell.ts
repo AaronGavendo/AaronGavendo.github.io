@@ -20,19 +20,14 @@ module objects {
             this.image.y = TANK_POS;
         }
 
-        update(){
+        update() {
             this.image.x -= this.dy;
             if (this.image.x <= 0) {
                 this.reset();
             }
         }
 
-        updatePosition(Position) {
-            
-        }
-
-        destroy()
-        {
+        destroy() {
             stage.removeChild(this.image);
         }
     }

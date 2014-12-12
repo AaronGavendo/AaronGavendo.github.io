@@ -13,7 +13,6 @@ var objects;
         }
         Scoreboard.prototype.update = function () {
             if (this.lives <= 0) {
-                //var finalScore = this.score.toString();
                 this.labelString = "YOU ARE DEAD, STOP PLAYING";
                 this.label.text = this.labelString;
             } else if (this.missed > 11) {
