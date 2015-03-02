@@ -15,8 +15,8 @@ $(document).ready(function () //Function to run when website is loaded
     
     $("#GenerateRap").click(function ()
     {
-        pick1 = Math.floor((Math.random() * 8) + 0); 
-        pick2 = Math.floor((Math.random() * 5) + 0); 
+        pick1 = Math.floor((Math.random() * rapname1.length) + 0); 
+        pick2 = Math.floor((Math.random() * rapname2.length) + 0); 
 
         whichColums = Math.floor((Math.random() * 2) + 1);
         
@@ -25,21 +25,22 @@ $(document).ready(function () //Function to run when website is loaded
             console.log('2 Word Rap - inside 1');
             word1 = rapname1[pick1];
             document.getElementById("outputTextRap").innerHTML = word1 + " " + $("#test").val();
+            $('#outputTextRap').html(word1 + " " + $("#test").val());
         }
         else if (whichColums == 2)
         {
             console.log('2 Word Rap - inside 2');
             word2 = rapname2[pick2];
-            document.getElementById("outputTextRap").innerHTML = $("#test").val() + " " + word2;
+            $('#outputTextRap').html($("#test").val() + " " + word2);
         }       
 
     });
     
     $("#Generate3").click(function () 
     {
-        pick1 = Math.floor((Math.random() * 5) + 0); 
-        pick2 = Math.floor((Math.random() * 5) + 0); 
-        pick3 = Math.floor((Math.random() * 5) + 0); 
+        pick1 = Math.floor((Math.random() * list1.length) + 0); 
+        pick2 = Math.floor((Math.random() * list2.length) + 0); 
+        pick3 = Math.floor((Math.random() * list3.length) + 0); 
         
         console.log(pick1, pick2, pick3);
         
@@ -47,29 +48,28 @@ $(document).ready(function () //Function to run when website is loaded
         word2 = list2[pick2];
         word3 = list3[pick3];
         
-        document.getElementById("outputText").innerHTML = word1 + " " + word2 + " " + word3;
+        $('#outputText').html(word1 + " " + word2 + " " + word3);
     });
     
     $("#Generate2").click(function ()
     {
-        pick1 = Math.floor((Math.random() * 5) + 0); 
-        pick2 = Math.floor((Math.random() * 5) + 0); 
+        pick1 = Math.floor((Math.random() * list1.length) + 0); 
+        pick2 = Math.floor((Math.random() * list2.length) + 0); 
 
-        whichColums = Math.floor((Math.random() * 2) + 1);
-        
-        if (whichColums == 1)
+        if (Math.random() >= 0.5) 
         {
             console.log('2 Word Band - inside 1');
             word1 = list1[pick1];
             word2 = list2[pick2];
-        }
-        else if (whichColums == 2)
+        } 
+        else 
         {
             console.log('2 Word Band - inside 2');       
             word1 = list2[pick1];
             word2 = list3[pick2]; 
-        }       
-        document.getElementById("outputText").innerHTML = word1 + " " + word2;
+        }
+        
+        $('#outputText').html(word1 + " " + word2);
     });
     
 
