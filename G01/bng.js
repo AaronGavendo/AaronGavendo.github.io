@@ -24,7 +24,6 @@ $(document).ready(function () //Function to run when website is loaded
         {
             console.log('2 Word Rap - inside 1');
             word1 = rapname1[pick1];
-            document.getElementById("outputTextRap").innerHTML = word1 + " " + $("#test").val();
             $('#outputTextRap').html(word1 + " " + $("#test").val());
         }
         else if (whichColums == 2)
