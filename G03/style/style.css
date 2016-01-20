@@ -1,0 +1,16 @@
+.clear{
+    clear:both;
+}
+#grid{
+    width: 600px;
+}
+    /* 600 / 200 causes only three elements on a row  */
+.grid-element{
+    width:200px;
+    float:left;
+}
+img {
+    border: 1px solid #0000ff;
+    height: 125px; 
+    width: 150px
+}

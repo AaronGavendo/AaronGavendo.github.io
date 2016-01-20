@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ship Formation</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+<h3>Pick the ship type</h3>
+<p>You Can fill 5 spots</p>
+<input type="radio" name="ship" onclick="check(this.value)" value="yellowship" checked>Yellow
+<br>
+<input type="radio" name="ship" onclick="check(this.value)" value="greenship">Green
+<br>
+<input type="radio" name="ship" onclick="check(this.value)" value="brownship">Brown
+<br>
+<input type="radio" name="ship" onclick="check(this.value)" value="blueship">Blue
+<br>
+<input type="radio" name="ship" onclick="check(this.value)" value="redship">Red
+<br>
+<input type="radio" name="ship" onclick="check(this.value)" value="holder">Erase Ship
+<div><button onclick="preview()">Preview Button</button></div>
+</br>
+<div id="grid">
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip1" onClick="changeImage(1)"/>
+    </div>
+
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip2" onClick="changeImage(2)"/>
+    </div>
+
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip3" onClick="changeImage(3)"/>
+    </div>
+ 
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip4" onClick="changeImage(4)"/>
+    </div>
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip5" onClick="changeImage(5)"/>
+    </div>
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip6" onClick="changeImage(6)"/>
+    </div>
+ 
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip7" onClick="changeImage(7)"/>
+    </div>
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip8" onClick="changeImage(8)"/>
+    </div>
+ 
+    <div class="grid-element">
+        <img src="ships/holder.png" id="placeShip9" onClick="changeImage(9)"/>
+    </div>
+</div>
+<canvas id="previewCanvas" width="620" height="620" style="border:1px solid #0000ff;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+
+<script src="js/ships.js"></script>
+</body>
+</html>
