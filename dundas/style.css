@@ -33,8 +33,8 @@ button
 }
 
 @media screen and (max-width: 768px){
-     /* place here CSS targeted at iPads and smaller, including iPhones and small hand-held devices */
-div /*For all Divs */
+     /* CSS for Mobile devices */
+div 
 {
 	padding-left: 25px;
 }
@@ -43,7 +43,6 @@ div.divadd
 {
 	width: 90%;
 	padding-left: 25px;
-	border: 1px solid blue; /* Delete these lines later */
 }
 
 div.divlist
@@ -52,14 +51,12 @@ div.divlist
     float:left;
     padding-right: 25px;
     padding-bottom: 25px; 
-    border: 1px solid red; /* Delete these lines later */
 }
 
 div.divbuttons
 {
 	width: 45%;
 	height: 375px;
-	border: 1px solid green; /* Delete these lines later */
     overflow: hidden; /* This prevents the divs from overlapping */
 }
 
