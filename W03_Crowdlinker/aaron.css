@@ -106,6 +106,22 @@ button.btn {
 
 }
 
+/* CSS for Mobile */
+
+@media screen and (max-width: 768px){
+
+	div.container {
+		padding-right: 90%;
+		padding-left: 90%;
+	}
+	div.row {
+		padding-bottom: 30px;
+		padding-top: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+ }
+
 
 
 
