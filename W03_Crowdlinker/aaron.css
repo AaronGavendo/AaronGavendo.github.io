@@ -1,0 +1,111 @@
+h3 {
+	text-align: center;
+
+}
+
+h3.green {
+	color: green;
+}
+
+h4 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+img {
+    float: left;
+    margin: 0;
+}
+
+/* div related CSS */
+
+div.container {
+	padding-right: 200px;
+	padding-left: 200px;
+}
+div.row {
+	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+div.padform {
+	padding-left:225px;
+}
+
+div.container-fluid li.navtext a {
+	  color: white;
+	  font-size: 60%;
+}
+
+
+/* For the license option */
+
+div.col-sm-3 p {
+	font-size: 50%;
+}
+
+
+
+/* This is for the Navbar at the bottom */
+nav.navbar {
+	background-color:rgb(134, 147, 158);
+	text-align: center;
+}
+
+#logo {
+	position: absolute;
+    left: 50%;
+    margin-left: -15px !important;  /* 50% of logo width */
+    display: block;
+}
+
+/* This is CSS for buttons */
+
+button.btn {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+/* This is CSS to add the glyphicon for send */
+
+/* These keep the icon inside the text box */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+
+}
+
+.inner-addon { 
+    position: relative; 
+}
+
+/* Adds padding to the left side inside text box to prevent overlapping  */
+.left-addon input  { 
+	padding-left:  35px; 
+}
+/* This is for the size of the text box */
+.form-control {
+	width: 250px;
+}
+
+/* CSS For the Top Bar */
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+/*CSS for Carousel */
+
+.carousel-content {
+    color: black;
+    background-color: #f2f2f2;
+
+}
+
+
+
+
